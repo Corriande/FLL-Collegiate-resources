@@ -1,0 +1,90 @@
+Andrew + Georgio Lucky leaves + seeds successful : 
+
+from pybricks.hubs import PrimeHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait, StopWatch
+
+
+hub = PrimeHub()
+
+
+left = Motor(Port.F)
+right = Motor(Port.B, Direction.COUNTERCLOCKWISE)
+
+
+left_arm = Motor(Port.E)
+right_arm = Motor(Port.A)
+
+
+robot = DriveBase(left, right, wheel_diameter=56, axle_track=110)
+
+
+# left_arm.reset_angle(0)
+
+
+# left_arm.run_target(500, 35)
+
+
+# Exploding Seeds
+
+
+robot.straight(200)
+robot.turn(-90)
+robot.straight(230)
+robot.turn(45.5)
+robot.straight(140.8)
+left_arm.run_angle(500,75)
+robot.straight(-300)
+robot.turn(40)
+
+
+# Lucky Leaves
+
+
+robot.straight(600)
+robot.turn(60)
+robot.straight(250)
+right_arm.run_angle(500,-75)
+
+Mr Gabo’s seeds to seeds alt code : 
+
+from pybricks.hubs import PrimeHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait, StopWatch
+
+
+hub = PrimeHub()
+
+
+left = Motor(Port.F)
+right = Motor(Port.B, Direction.COUNTERCLOCKWISE)
+
+
+left_arm = Motor(Port.E)
+right_arm = Motor(Port.A)
+
+
+robot = DriveBase(left, right, wheel_diameter=56, axle_track=110)
+
+
+# left_arm.reset_angle(0)
+
+
+# left_arm.run_target(500, 35)
+
+
+# Exploding Seeds
+
+
+robot.straight(200)
+robot.turn(-90)
+robot.straight(230)
+robot.turn(45.5)
+robot.straight(140.8)
+left_arm.run_angle(500,75)
+robot.straight(-150)
+robot.turn(-20)
